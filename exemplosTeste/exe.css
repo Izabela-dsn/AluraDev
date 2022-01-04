@@ -1,0 +1,11 @@
+.container {
+  background: pink;
+}
+
+.container p {
+  display: none;
+}
+
+.container:hover p {
+  display: block;
+}

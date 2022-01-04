@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALURA DEV</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/dracula.css" />
+    <link rel="stylesheet" href="style/default.css" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/editor.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo-plataforma.svg" alt="AluraDev" class="logo show" />
+      <form action="#">
+        <input
+          type="search"
+          name="Busque"
+          data-input-busca
+          placeholder=" Busque por algo"
+          class="busca"
+        />
+      </form>
+      <img
+        src="assets/close-Menu-hamburguer.svg"
+        alt="fechar busca"
+        class="toggle-busca icon-fechar-busca"
+      />
+
+      <div class="avatar toggle">
+        <img src="assets/Photo.svg" alt="" />
+        <p>Harry</p>
+      </div>
+
+      <div class="toggle-busca icon-busca show">
+        <img src="/assets/barra-pesquisa.svg" alt="pesquisar" />
+      </div>
+      <div class="toggle icon-menu icon show">
+        <img src="/assets/Menu hamburguer.svg" alt="abrir menu" />
+      </div>
+      <div class="toggle icon-close icon">
+        <img src="/assets/close-Menu-hamburguer.svg" alt="fechar menu" />
+      </div>
+    </header>
+    <main>
+      <nav class="menu-lateral">
+        <p>Menu</p>
+        <a href="index.html" class="editor"
+          ><img src="assets/editor-codigo.svg" alt="" />Editor de código</a
+        >
+        <a href="comunidade.html" class="comunidade"
+          ><img src="assets/comunidade-desativado.svg" alt="" />Comunidade</a
+        >
+        <hr class="linha toggle" />
+      </nav>
+
+      <section class="projeto">
+        <form class="codigo">
+          <div class="codigo-edicao">
+            <div class="codigo-div-colorida" data-color-place>
+              <div class="codigo-container">
+                <div class="circulos-pequenos"></div>
+                <div class="circulos-pequenos"></div>
+                <div class="circulos-pequenos"></div>
+
+                <div class="wrapper">
+                  <code
+                    class="codigo-editor hljs"
+                    contenteditable="true"
+                    aria-label="Editor de Código"
+                  >
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-visualizar-highlight" data-button-highlight>
+              Visualizar com o highlight
+            </button>
+          </div>
+
+          <div class="codigo-info">
+            <fieldset>
+              <p>Seu Projeto</p>
+              <label for="nome-projeto" hidden>Nome do seu projeto</label>
+              <input
+                type="text"
+                id="nome-projeto"
+                placeholder=" Nome do seu projeto"
+                required
+                data-form-input-nome-projeto
+              />
+              <label for="descricao" hidden>Descrição do seu projeto</label>
+              <textarea
+                placeholder=" Descrição do seu projeto"
+                id="descricao"
+                data-form-input-descricao-projeto
+                required
+              ></textarea>
+            </fieldset>
+
+            <fieldset>
+              <p>Personalização</p>
+              <div class="inputs">
+                <select
+                  class="selecionar-linguagem"
+                  data-form-input-select-linguagem
+                >
+                  <option value="javascript">JavaScript</option>
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="python">Python</option>
+                </select>
+                <input
+                  type="color"
+                  id="color"
+                  value="#6bd1ff"
+                  data-form-input-color
+                />
+              </div>
+            </fieldset>
+
+            <button data-button-save type="button" class="btn-salvar-dados">
+              Salvar projeto
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="main.js"></script>
+    <script src="menus.js"></script>
+  </body>
+</html>

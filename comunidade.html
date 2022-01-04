@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALURA DEV</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/default.css" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/editor.css" />
+    <link rel="stylesheet" href="style/comunidade.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo-plataforma.svg" alt="AluraDev" class="logo show" />
+      <form>
+        <input
+          type="search"
+          name="Busque"
+          data-input-busca
+          placeholder=" Busque por algo"
+          class="busca"
+        />
+      </form>
+      <img
+        src="assets/close-Menu-hamburguer.svg"
+        alt="fechar busca"
+        class="toggle-busca icon-fechar-busca"
+      />
+
+      <div class="avatar toggle">
+        <img src="assets/Photo.svg" alt="" />
+        <p>Harry</p>
+      </div>
+
+      <div class="toggle-busca icon-busca show">
+        <img src="/assets/barra-pesquisa.svg" alt="pesquisar" />
+      </div>
+      <div class="toggle icon-menu icon show">
+        <img src="/assets/Menu hamburguer.svg" alt="abrir menu" />
+      </div>
+      <div class="toggle icon-close icon">
+        <img src="/assets/close-Menu-hamburguer.svg" alt="fechar menu" />
+      </div>
+    </header>
+    <main>
+      <nav class="menu-lateral">
+        <p>Menu</p>
+        <a href="index.html" class="editor"
+          ><img src="assets/editor-codigo-desativado.svg" alt="" />Editor de
+          código</a
+        >
+        <a href="comunidade.html" class="comunidade"
+          ><img src="assets/comunidade-ativado.svg" alt="" />Comunidade</a
+        >
+        <hr class="linha toggle" />
+      </nav>
+
+      <ul class="cards-projetos"></ul>
+    </main>
+    <script src="menus.js"></script>
+    <script src="getData.js"></script>
+  </body>
+</html>

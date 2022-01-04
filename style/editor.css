@@ -1,0 +1,184 @@
+main {
+  display: grid;
+  grid-template-columns: 22% 77%;
+}
+
+.menu-lateral .comunidade {
+  color: var(--texto-desativado);
+}
+
+.projeto form {
+  display: flex;
+}
+
+.codigo-div-colorida {
+  background: var(--azul-ciano-codigo);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.codigo-container {
+  height: 50vh;
+  width: 45vw;
+  background: black;
+  border-radius: 0.2rem;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+}
+
+.circulos-pequenos {
+  display: inline-block;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 1rem 0 0 0.5rem;
+}
+
+.circulos-pequenos:first-child {
+  background: var(--red-mac);
+  margin-left: 1rem;
+}
+
+.circulos-pequenos:nth-child(2) {
+  background: var(--yellow-mac);
+}
+
+.circulos-pequenos:nth-child(3) {
+  background: var(--green-mac);
+}
+
+.codigo-editor {
+  display: block;
+  border: none;
+  height: 44vh;
+  width: 44vw;
+  background: black;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+.btn-visualizar-highlight {
+  background: var(--botao-highlight);
+  padding: 1rem 14.2rem;
+  color: white;
+  border: none;
+  margin-left: 0.9rem;
+}
+
+.btn-visualizar-highlight:focus {
+  background: var(--btn-highlight-focus);
+}
+
+.btn-visualizar-highlight:hover {
+  cursor: pointer;
+  background: var(--btn-highlight-hover);
+}
+
+.codigo-info {
+  margin: 0 0 0 2.5rem;
+}
+
+.codigo-info fieldset:first-child {
+  margin-bottom: 1rem;
+}
+
+.codigo-info p {
+  font: var(--sidebar-title);
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.codigo-info input,
+.codigo-info textarea,
+.codigo-info select {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.codigo-info .btn-salvar-dados {
+  background: var(--botao-salvar);
+  padding: 1rem 5.5rem;
+  border-radius: 0.2rem;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  margin-left: 0.2rem;
+}
+
+.codigo-info .btn-salvar-dados:hover {
+  background: var(--btn-salvar-hover);
+}
+
+.codigo-info .btn-salvar-dados:focus {
+  background: var(--btn-salvar-focus);
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .projeto form {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .codigo-container {
+    width: 100%;
+  }
+  .codigo-editor {
+    width: 98%;
+    height: 43vh;
+  }
+
+  .btn-visualizar-highlight {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+  .codigo-info {
+    margin: 2rem 0 0 0;
+  }
+  .codigo-info .btn-salvar-dados {
+    width: 100%;
+  }
+
+  .codigo-info fieldset .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .codigo-info fieldset .inputs select,
+  .codigo-info fieldset .inputs input {
+    width: 49%;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 0 1rem;
+  }
+
+  .codigo-container {
+    height: 100%;
+  }
+  .codigo-editor {
+    width: 96.5%;
+    height: 60vh;
+  }
+
+  .btn-visualizar-highlight {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .codigo-info fieldset .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .codigo-info fieldset .inputs select,
+  .codigo-info fieldset .inputs input {
+    width: 100%;
+  }
+}
