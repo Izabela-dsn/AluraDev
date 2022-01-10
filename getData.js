@@ -29,7 +29,7 @@ const template = (color, codigo, nomeProjeto, descricaoProjeto) => {
             <footer>
                 <div class="interacao">
                   <p><img src="/assets/comment.svg" alt="" class="comentario" /> 9</p>
-                  <p><img src="/assets/heart.svg" alt="" class="heart" /> 9</p>
+                  <p class="coracao"><img src="/assets/heart.svg" alt="" class="heart" /> 9</p>
                 </div>
                 <div class="avatar" >
                   <img src="assets/Photo.svg" alt />
@@ -57,3 +57,9 @@ const carregaCards = () => {
   })
 }
 carregaCards()
+
+const coracao = document.querySelector('.coracao')
+const icon = document.querySelector('.heart')
+coracao.addEventListener('click', () => {
+  icon.setAttribute('src', '/assets/heart-active.svg')
+})
