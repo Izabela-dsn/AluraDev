@@ -16,11 +16,10 @@ const btnHighlight = document.querySelector('[data-button-highlight]')
 const aplicaHighlight = e => {
   e.preventDefault()
   const codigo = areaDoCodigo.innerText
-  areaDoCodigo.innerHTML = `<code class='area-do-codigo-editor hljs ${linguagemCodigo.value}' contenteditable='true' aria-label='Editor de Código'></code>`
+  areaDoCodigo.innerHTML = `<code class='codigo-editor hljs ${linguagemCodigo.value}' contenteditable='true' aria-label='Editor de Código'></code>`
   areaDoCodigo.querySelector('code').textContent = codigo
   hljs.highlightElement(areaDoCodigo.querySelector('code'))
 }
-
 btnHighlight.addEventListener('click', aplicaHighlight)
 
 /* pegando e salvando dados */
@@ -58,4 +57,13 @@ btnSave.addEventListener('click', e => {
     descricaoProjeto.value = ''
     codigoH.innerHTML = ''
   }
+})
+
+/* Salvando código em PNG */
+const btnSalvarComoImagem = document.querySelector('.btn-salvar-como-imagem')
+
+btnSalvarComoImagem.addEventListener('click', () => {
+  domtoimage.toBlob(document.getElementById('edicao')).then(function (blob) {
+    window.saveAs(blob, 'my-image.png')
+  })
 })
