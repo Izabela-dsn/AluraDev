@@ -30,6 +30,11 @@ body {
   font: var(--body);
 }
 
+main {
+  display: grid;
+  grid-template-columns: 22% 77%;
+}
+
 button {
   font: var(--body);
   cursor: pointer;
