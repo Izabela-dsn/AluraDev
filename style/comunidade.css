@@ -6,6 +6,7 @@
   color: white;
 }
 
+/* ------- CARDS ------------------------*/
 .card {
   background: rgba(0, 0, 0, 0.16);
   border-radius: 0.5rem;
@@ -25,28 +26,70 @@
 .codigo-div-colorida {
   padding: 1.5rem;
   margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 .codigo-container {
   height: 30vh;
   width: 32vw;
+  background: black;
+  border-radius: 0.5rem;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
 }
 
 .circulos-pequenos {
+  display: inline-block;
+  border-radius: 50%;
   width: 0.6rem;
   height: 0.6rem;
   margin: 1rem 0 0 0.4rem;
 }
 
 .circulos-pequenos:first-child {
+  background: var(--red-mac);
   margin-left: 1rem;
 }
 
+.circulos-pequenos:nth-child(2) {
+  background: var(--yellow-mac);
+}
+
+.circulos-pequenos:nth-child(3) {
+  background: var(--green-mac);
+}
+
 .codigo-editor {
+  display: block;
+  border: none;
   height: 25.5vh;
   width: 32vw;
   font-size: 11px;
+  background: transparent;
+  white-space: pre-wrap;
+  overflow: scroll;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(102, 102, 102);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ------- FIM DOS CARDS ------------------------*/
 
 .dados {
   padding: 1.5rem;
@@ -168,6 +211,9 @@
 }
 
 @media (max-width: 375px) {
+  body {
+    margin: 0 1rem;
+  }
   .codigo {
     width: 100%;
   }
