@@ -1,5 +1,8 @@
-# AluraDev
-Projeto do Challenge da Alura
+<img src = "https://user-images.githubusercontent.com/79534537/151362509-c45d822e-cf66-47ed-b722-6102ebcb781c.png">
+
+# AluraDev 
+
+Projeto do Challenge da Alura - Codificado com carinho por mim 💙
 
 ## Tecnologias Utilizadas 🌟
 * HTML
@@ -18,5 +21,5 @@ Projeto do Challenge da Alura
 ## Da uma olhada no trem já pronto: https://aluradeviza.netlify.app/  👀
 
 ### ⚠️ Use com moderação ⚠️
-### E se você tem sugestões fique a vontade pra mandar aquela pull request 🤙
+### E se você tem sugestões fique a vontade pra mandar aquela pull request/issue 🤙
 
