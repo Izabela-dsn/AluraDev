@@ -21,5 +21,5 @@ Projeto do Challenge da Alura - Codificado com carinho por mim 💙
 ## Da uma olhada no trem já pronto: https://aluradeviza.netlify.app/  👀
 
 ### ⚠️ Use com moderação ⚠️
-### E se você tem sugestões fique a vontade pra mandar aquela pull request/issue 🤙
+### E se você tem sugestões fique a vontade pra mandar aquela issue 🤙
 
